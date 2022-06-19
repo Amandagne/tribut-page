@@ -1,13 +1,20 @@
 html{
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 body{
     font-family: poppins;
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+}
+*{
+    box-sizing: border-box;
 }
 #main{
     display: flex;
     flex-direction: column;
-    margin:2em 0;
+    margin:0;
     background: #618685;
     padding: 1em 1em;
     color:white;
@@ -49,7 +56,7 @@ figcaption{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 30vw;
+    width: 38vw;
     margin: 2em auto;
     gap:1em;
     color:#e6e6e6;
@@ -63,7 +70,7 @@ figure img{
     max-width: 100%;
 }
 #quote{
-    max-width: 40vw;
+    width: 40vw;
     margin: 0 auto;
 }
 #more{
@@ -74,4 +81,31 @@ figure img{
 }
 #tribute-link{
     color:rgb(83, 184, 247);
+}
+@media(max-width:600px){
+    *{
+        box-sizing: border-box;
+    }
+    #tribute-info{
+        padding: 5px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:1em auto;
+    }
+    #tribute-info li{
+        width: 100%;
+    }
+    #quote{
+        width: 100%;
+        padding: 15px;
+    }
+    #more{
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    main{
+        margin-bottom: 0;
+    }
 }
